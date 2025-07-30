@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldValidationSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ktb-te-af1">
+                                <rect key="frame" x="39.333333333333343" y="74" width="314.33333333333326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="emailChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="qjO-XG-hRE"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xP9-8W-YCK">
+                                <rect key="frame" x="39.333333333333343" y="118" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ENE-Rk-j0f">
+                                <rect key="frame" x="39.333333333333343" y="173" width="314.33333333333326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passswordChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="I0p-Oj-zN6"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBk-Ds-SKK">
+                                <rect key="frame" x="39.333333333333343" y="217" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ub-Yp-SGt">
+                                <rect key="frame" x="39.333333333333343" y="273" width="314.33333333333326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXw-to-Np4">
+                                <rect key="frame" x="39.333333333333343" y="317" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adS-4s-2Vr">
+                                <rect key="frame" x="157.66666666666666" y="389" width="78" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                <connections>
+                                    <action selector="submitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZj-TF-RsJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6B8-Ys-BU4">
+                                <rect key="frame" x="39.333333333333343" y="273" width="314.33333333333326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <action selector="phoneNumberChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="n52-v8-WtX"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6ub-Yp-SGt" firstAttribute="top" secondItem="ENE-Rk-j0f" secondAttribute="bottom" constant="66" id="7M8-dF-VKH"/>
+                            <constraint firstItem="adS-4s-2Vr" firstAttribute="centerX" secondItem="6ub-Yp-SGt" secondAttribute="centerX" id="8UC-LN-cCz"/>
+                            <constraint firstItem="ENE-Rk-j0f" firstAttribute="width" secondItem="ktb-te-af1" secondAttribute="width" id="J5r-eF-yNM"/>
+                            <constraint firstItem="xP9-8W-YCK" firstAttribute="top" secondItem="ktb-te-af1" secondAttribute="bottom" constant="10" id="K4a-5l-EbM"/>
+                            <constraint firstItem="xP9-8W-YCK" firstAttribute="leading" secondItem="ktb-te-af1" secondAttribute="leading" id="Lyb-Bh-SRT"/>
+                            <constraint firstItem="xXw-to-Np4" firstAttribute="leading" secondItem="6ub-Yp-SGt" secondAttribute="leading" id="PU7-qk-9Cy"/>
+                            <constraint firstItem="ENE-Rk-j0f" firstAttribute="top" secondItem="ktb-te-af1" secondAttribute="bottom" constant="65" id="XVj-MI-KYe"/>
+                            <constraint firstItem="ZBk-Ds-SKK" firstAttribute="leading" secondItem="ENE-Rk-j0f" secondAttribute="leading" id="amF-5B-qPI"/>
+                            <constraint firstItem="ENE-Rk-j0f" firstAttribute="centerX" secondItem="ktb-te-af1" secondAttribute="centerX" id="dUc-hz-CnU"/>
+                            <constraint firstItem="6ub-Yp-SGt" firstAttribute="width" secondItem="ENE-Rk-j0f" secondAttribute="width" id="eCj-In-OZQ"/>
+                            <constraint firstItem="6B8-Ys-BU4" firstAttribute="centerX" secondItem="ENE-Rk-j0f" secondAttribute="centerX" id="eqv-ta-jNX"/>
+                            <constraint firstItem="6B8-Ys-BU4" firstAttribute="top" secondItem="ENE-Rk-j0f" secondAttribute="bottom" constant="66" id="gZS-Rk-p8Q"/>
+                            <constraint firstItem="6B8-Ys-BU4" firstAttribute="width" secondItem="ENE-Rk-j0f" secondAttribute="width" id="idu-oF-CKq"/>
+                            <constraint firstItem="ktb-te-af1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kLQ-5M-52i"/>
+                            <constraint firstItem="ktb-te-af1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="nGX-NH-d9r"/>
+                            <constraint firstItem="ktb-te-af1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="pIm-Hh-4OI"/>
+                            <constraint firstItem="6ub-Yp-SGt" firstAttribute="centerX" secondItem="ENE-Rk-j0f" secondAttribute="centerX" id="r5f-kc-bEh"/>
+                            <constraint firstItem="xXw-to-Np4" firstAttribute="top" secondItem="6ub-Yp-SGt" secondAttribute="bottom" constant="10" id="vpE-Zg-lPm"/>
+                            <constraint firstItem="ZBk-Ds-SKK" firstAttribute="top" secondItem="ENE-Rk-j0f" secondAttribute="bottom" constant="10" id="wDN-75-C8J"/>
+                            <constraint firstItem="adS-4s-2Vr" firstAttribute="top" secondItem="6ub-Yp-SGt" secondAttribute="bottom" constant="82" id="yji-Wn-APb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailErrorMessage" destination="xP9-8W-YCK" id="HqD-Xc-stR"/>
+                        <outlet property="emailTF" destination="ktb-te-af1" id="MYV-KK-6a2"/>
+                        <outlet property="passwordErrorMessage" destination="ZBk-Ds-SKK" id="SZy-AE-hTU"/>
+                        <outlet property="passwordTF" destination="ENE-Rk-j0f" id="J5t-5n-oTf"/>
+                        <outlet property="phoneNumberErrorMessage" destination="xXw-to-Np4" id="ggp-GE-OID"/>
+                        <outlet property="phoneNumberTF" destination="6B8-Ys-BU4" id="Q3N-eB-hsh"/>
+                        <outlet property="submitButton" destination="adS-4s-2Vr" id="xNG-I9-Ee1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
